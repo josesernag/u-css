@@ -1,7 +1,7 @@
 /* Practice Layout */
 
 /** Wrap **/
-.paginaejemplo{
+.pagina-ejemplo{
   background-color: #82b1ff;
   margin: auto;
   max-width: 65%;
@@ -12,23 +12,21 @@
 .header {
   background-color: #0d47a1;
   color:white;
-  height: 80px;
   padding: 0 15px;
 }
 
-.topnav{
+.top-nav{
   background-color:yellow;
   padding:15px;
 }
 
-.topnav ul{
+.top-nav ul{
   margin: 0;
   padding: 0;
 }
 
 .titulo-pagina{
-  margin-top:0px;
-  display:inline;
+  margin:0px;
 }
 
 /** Body sections **/
