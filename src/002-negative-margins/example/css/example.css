@@ -11,7 +11,7 @@ html {
 
 
 /** Wrap **/
-.paginaejemplo{
+.pagina-ejemplo{
   margin: auto;
   max-width: 65%;
   overflow:hidden;
@@ -110,6 +110,6 @@ html {
     padding: 10px 15px;
 }
 
-.botonclass{
+.boton-class{
    margin-bottom: 10px;
 }
