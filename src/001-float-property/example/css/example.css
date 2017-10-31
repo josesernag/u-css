@@ -5,7 +5,7 @@
 }
 
 /** Wrap **/
-.paginaejemplo{
+.pagina-ejemplo{
   background-color: #82b1ff;
   margin: auto;
   max-width: 70%;
@@ -17,22 +17,26 @@
   background-color: #0d47a1;
   color:white;
   height: 80px;
-  padding: 0 15px;
-  margin: -24px 0 0 0;
+  padding: 2px 15px 0px 15px;
+
 }
 
 /** nav  **/
-.topnav {
+.top-nav {
   overflow: hidden;
   background-color: #1565c0;
   text-overflow: ellipsis;
 }
 
 /** nav font **/
-.topnav a{
+.top-nav a{
   color: white;
 }
 
+.top-nav li{
+	list-style: none;
+	display: inline;
+}
 /** content article **/
 .content-article{
   background-color: #bbdefb;
@@ -74,4 +78,3 @@
 	margin:0;
 	padding: 10px;
 }
-
