@@ -11,7 +11,7 @@ html {
 
 
 /** Wrap page **/
- .paginaejemplo{
+ .pagina-ejemplo{
    margin: auto;
    max-width: 65%;
  }
@@ -19,27 +19,31 @@ html {
  /** Wrap **/
  .contenido{
    background-color:#eceff1;
-   padding:5px;
+   padding:15px;
    margin-bottom:20px;
  }
 
  /** bloque **/
-  .bloque{
-     width: 1000px;
-     height: 80px;
-     margin: 15px;
-     padding: 15px;
-     border: 5px solid #D24F2E;
-     overflow:auto;
-     background-color:yellow;
+  .content-block{
+    border: 5px solid #D24F2E;
+    display: table-cell;
+    height: 80px;
+    margin: 15px;
+    padding: 15px;
+    width: 1000px;
+    vertical-align: middle;
   }
 
 /** Segundo bloque **/
- .segundo{
+ .property-content-box{
   box-sizing:content-box;
+  display: table-cell;
+  vertical-align: middle;
  }
 
 /** Tercero bloque **/
- .tercero{
+ .property-border-box{
   box-sizing:border-box;
+  display: table-cell;
+  vertical-align: middle;
  }
