@@ -1,0 +1,155 @@
+/* Practice Layout */
+
+body{
+  color: #787878;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Font */
+h3{
+	font-size: 1.5em;
+	font-weight: 600;
+}
+
+/* Page wrap */
+.page-container{
+	margin-left: 20px;
+	width: 50%;	
+}
+
+/*tabs*/
+.tabs {
+  background: #efefef;
+  box-shadow: 0 48px 80px -32px rgba(0,0,0,0.3);
+  display: flex;
+  flex-wrap:wrap;
+}
+
+/* Content panel */
+.panel {
+  background: #fff;
+  box-sizing: border-box;
+  display: none;
+  padding: 0 20px 20px 20px;
+  order: 98;
+  width: inherit;
+}
+
+
+/* Input */
+.label{
+	background-color: #e5e5e5;
+	height: 70px;
+	padding: 30px;
+	text-align: center;
+	width: auto;
+}
+
+.label{
+	box-sizing: border-box;
+	cursor: pointer;
+	font-size: 1em;
+	font-weight: 600;
+	padding-top: 25px;
+}
+
+
+.label:hover {
+  background: #d8d8d8;
+}
+
+.input:focus + .label {
+ 	border:  3px solid #2aa1c0;
+}
+
+.input:checked + .label{
+	background-color: #fff;
+}
+
+.input:checked + .label + .panel {
+	display: block;
+}
+
+.input {
+	position: absolute;
+	opacity: 0;
+}
+
+/* Checkbox */
+
+.control-group{
+	sizing-box: border-box;
+	padding: 0 0 10px 10px;
+	box-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+
+input[type="checkbox"], input[type="radio"] {
+    display:none;
+}
+
+.control-group label span {
+	background-color: #e6e6e6;
+    display:inline-block;
+    height:19px;
+    width:19px;
+}
+
+.control-group label span:hover {
+	background-color: #cecece;
+	cursor: pointer;
+}
+
+.control-group label:hover, .control-group label:hover {
+	cursor: pointer;
+}
+
+.control-group label span{
+	margin-right: 10px;
+	margin-bottom: 2px;
+	padding-bottom: 2px;
+}
+
+.control-group label{
+	align-items:center;
+	display: flex;
+	font-size: 1.2em;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+
+.control-group input:checked ~ .span-checkbox {
+  background: #2aa1c0;
+}
+
+.control-group input:checked ~ .span-checkbox:after {
+  content: "\2713 ";
+  color: white;
+  padding: 0px 0px 0px 2px;
+  margin-top: -2px;
+}
+
+.control-group input:disabled ~ .span-checkbox {
+  background: #e6e6e6;
+}
+
+/* Radio */
+.control-group input[type="radio"] ~ span {
+	border-radius: 75px;
+}
+
+.control-group input:checked ~ .span-radio {
+  background: #2aa1c0;
+}
+
+.control-group input:checked ~ .span-radio:after {
+	display: block;
+  	content: "\2022";
+  	color: white;
+  	margin: -9px 1px;
+  	zoom : 2;
+}
+
+.control-group input:disabled ~ .span-radio {
+	background: #e6e6e6;
+}
