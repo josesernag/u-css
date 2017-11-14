@@ -8,14 +8,15 @@ body{
 
 /* Font */
 h3{
-	font-size: 1.5em;
+	font-size: 1.3em;
 	font-weight: 600;
+  margin: 0px;
 }
 
 /* Page wrap */
 .page-container{
 	margin-left: 20px;
-	width: 50%;	
+	width: 40%;
 }
 
 /*tabs*/
@@ -31,7 +32,7 @@ h3{
   background: #fff;
   box-sizing: border-box;
   display: none;
-  padding: 0 20px 20px 20px;
+  padding: 25px 30px;
   order: 98;
   width: inherit;
 }
@@ -135,7 +136,7 @@ input[type="checkbox"], input[type="radio"] {
 
 /* Radio */
 .control-group input[type="radio"] ~ span {
-	border-radius: 75px;
+	border-radius: 80px;
 }
 
 .control-group input:checked ~ .span-radio {
@@ -144,12 +145,44 @@ input[type="checkbox"], input[type="radio"] {
 
 .control-group input:checked ~ .span-radio:after {
 	display: block;
-  	content: "\2022";
-  	color: white;
-  	margin: -9px 1px;
-  	zoom : 2;
+  content: "\2022";
+  color: white;
+  height: 17px;
+  margin: -4px 5px;
+  zoom : 1;
 }
 
 .control-group input:disabled ~ .span-radio {
 	background: #e6e6e6;
+}
+
+/* Cards */
+.list-checks ul{
+  list-style: none;
+  width: 80%;
+}
+
+.list-checks li{
+  display: flex;
+  font-size: 0.8em;
+  padding: 5px;
+}
+
+.list-checks li p{
+  margin: 0px;
+}
+
+.list-checks li:hover{
+  background-color: #e2e2e2;
+	cursor: pointer;
+}
+
+.list-checks img{
+  float: left;
+  height: 100px;
+  width: 100px;
+}
+
+li > div{
+  width: 100%;
 }
