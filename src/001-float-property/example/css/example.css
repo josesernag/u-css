@@ -4,9 +4,14 @@
 	color: black;
 }
 
+
+body{
+  font-size: 16px;
+}
+
 /** Wrap **/
 .pagina-ejemplo{
-  background-color: #82b1ff;
+  background-color: #bbdefb;
   margin: auto;
   max-width: 70%;
   overflow:hidden;
@@ -41,13 +46,13 @@
 .content-article{
   background-color: #bbdefb;
   box-sizing: border-box;
-  float:left;
+  float:right;
   padding: 15px 15px 77px 15px;
   width:60%;
 }
 
 .content-article img{
-  float:left;
+  float:right;
   margin: 0 10px 0 0;
 }
 
@@ -55,7 +60,7 @@
 .content-aside{
   background-color: #2196f3;
   box-sizing: border-box;
-  float:right;
+  float:left;
   padding: 15px;
   width:40%;
 }
@@ -77,4 +82,38 @@
   float: left;
 	margin:0;
 	padding: 10px;
+}
+
+/* Content footer */
+img ~ p::first-letter, .cf-capital::first-letter{
+	float: left;
+	font-size: 4em;
+	padding-right: 5px;
+	margin-bottom: 1px;
+	margin-top: 10px;
+}
+
+.content-footer img:first-child{
+	margin-right: 5px;
+	height: 100px;
+	width: 100px;
+}
+
+.content-footer img:last-child{
+	height: 120px;
+	width: 80px;
+}
+
+.content-footer div{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px 15px;
+}
+
+.cf-border p{
+	width: 90%;
+}
+
+.cf-border{
+	border: 2px solid #1ABC9C;
 }
