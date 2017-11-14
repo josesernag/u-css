@@ -9,6 +9,10 @@ html {
   padding: 0;
 }
 
+h5{
+  font-weight: bold;
+}
+
 
 /** Wrap **/
 .pagina-ejemplo{
@@ -28,6 +32,7 @@ html {
 /** Sections title **/
 .section-content h2{
   border-bottom: 1px solid #D24F2E;
+  font-size: 1.5em;
 }
 
 /** Sections article **/
@@ -75,11 +80,6 @@ html {
     width: 100px;
 }
 
-.list-header{
-  text-transform:uppercase;
-  font-weight: 600;
-}
-
 .col2{
   margin-left: 99px;
 }
@@ -89,7 +89,7 @@ html {
 }
 
 .list-top{
-  margin-top: -116px;
+  margin-top: -87px;
 }
 
 /** Third section **/
