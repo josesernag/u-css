@@ -69,18 +69,20 @@
 
 /** Box **/
 .body-box{
+    padding-left: 15px;
+}
+
+.body-box-section{
   margin-bottom:15px;
   vertical-align:middle;
   width:100%;
 }
 
-.body-box div{
-  border: 10px solid #f4511e;
+.body-box-section div{
+  border: 5px solid #f4511e;
   box-sizing: border-box;
   display: inline-block;
-  height:150px;
-  margin: 10px;
-  padding:50px;
-  text-align: center;
-  width:200px;
+  height:250px;
+  margin-bottom: 3px;
+  width:30%;
 }
