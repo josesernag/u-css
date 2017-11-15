@@ -83,11 +83,44 @@
   background: #8cd0d2;
 }
 
+.body-box{
+  display: flex;
+  flex-wrap: wrap;
+  width:100%;
+}
+
+.body-box div{
+  background-color: #81d4fa;
+  border: 1px solid #f4511e;
+  box-sizing: border-box;
+  display: inline-block;
+  height:150px;
+  width:200px;
+}
+
 /* Main */
 .wraper2 #main2 {
   padding: 20px;
   flex: 1;
   background-color: #ffd0c4;
+}
+
+.body-box-second-example{
+  display: flex;
+  flex-wrap: wrap;
+  width:100%;
+}
+
+.body-box-second-example div{
+  background-color: #81d4fa;
+  border: 1px solid #f4511e;
+  box-sizing: border-box;
+  height:200px;
+  width: 100px;
+}
+
+.body-box-second-example div:nth-child(odd){
+  height:250px;
 }
 
 /* Navbar and footer */
