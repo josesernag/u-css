@@ -1,0 +1,243 @@
+/* Practice Layout */
+body,html {
+  color: #787878;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  font-size: 3em;
+  margin-top: 0px;
+  text-align: center;
+}
+
+ul{
+ list-style: none;
+ padding: 0px;
+}
+
+/* Page content wrap */
+.page-content{
+  margin: auto;
+  width: 60%;
+}
+
+/* Header */
+.titulo{
+  animation-name: titulo-anim;
+  animation-duration: 4s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  color: #f35626;
+}
+
+@keyframes titulo-anim {
+  50% {
+    opacity: 1;
+  }
+
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+/* Article */
+.article{
+    background-color: #C8C8C8;
+    height: 550px;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.article li{
+  display: inline-block;
+  margin-left: 17px;
+  -webkit-perspective:500;
+}
+
+.animal-info{
+  background-color: #deddcd;
+  border: 10px solid #fcfafa;
+  box-shadow:0 20px 40px #888;
+  height: 120px;
+  margin-left: 68px;
+  margin-top: -180px;
+  padding: 20px;
+  position: absolute;
+  transform: rotatey(30deg);
+  width: 200px;
+}
+
+.animal-info h3{
+  color: #7a3f3a;
+  font-family:Georgia,serif,Times;
+  font-size: 1em;
+  margin: 0px;
+}
+
+.animal-info h3::first-letter{
+    font-weight: bold;
+}
+
+.animal-info a{
+  background-color: #7a3f3a;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.2em;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.animal-info p{
+  font-size: 1em;
+}
+
+section img{
+  border: 10px solid #fcfafa;
+  box-shadow:0 3px 10px #888;
+  height: 400px;
+  width: 300px;
+}
+.article li img {
+  border:10px solid #fcfafa;
+  -webkit-transform: rotateY(30deg);
+}
+
+.article li:hover img {
+  animation: img-anim 0.5s ease-in-out forwards;
+}
+
+.article li:hover .animal-info{
+  animation: div-anim 0.5s ease-in-out forwards;
+}
+
+@keyframes img-anim {
+  100% {
+    -webkit-transform: rotateY(0deg);
+  }
+}
+
+@keyframes div-anim {
+  100% {
+    -webkit-transform: rotateY(0deg);
+    margin-left: 30px;
+  }
+}
+
+/* Aside */
+.aside{
+  background-color: #E8E8E8;
+  box-sizing: border-box;
+  float: right;
+  height: 730px;
+  min-width: 250px;
+  text-align: center;
+  width: 30%;
+}
+
+.aside button{
+  animation: bubble-anim 2s ease-in-out forwards;
+  background-color: #55c4e6;
+  background: linear-gradient(to bottom, #55c4e6 5%, #0babe0 100%);
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.5em;
+  margin-bottom: 7px;
+  padding: 10px;
+  text-shadow: 2px 1px 0px #275873;
+  width: 150px;
+}
+.aside button:hover{
+  animation: button-anim 2s ease-in-out forwards;
+}
+
+@keyframes button-anim {
+    0% {
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -o-transform: scale(1);
+    }
+    20% {
+      -webkit-transform: scaleY(0.95) scaleX(1.05);
+      -moz-transform: scaleY(0.95) scaleX(1.05);
+      -o-transform: scaleY(0.95) scaleX(1.05);
+    }
+    48% {
+      -webkit-transform: scaleY(1.1) scaleX(0.9);
+      -moz-transform: scaleY(1.1) scaleX(0.9);
+      -o-transform: scaleY(1.1) scaleX(0.9);
+    }
+    68% {
+      -webkit-transform: scaleY(0.98) scaleX(1.02);
+      -moz-transform: scaleY(0.98) scaleX(1.02);
+      -o-transform: scaleY(0.98) scaleX(1.02);
+    }
+    80% {
+      -webkit-transform: scaleY(1.02) scaleX(0.98);
+      -moz-transform: scaleY(1.02) scaleX(0.98);
+      -o-transform: scaleY(1.02) scaleX(0.98);
+    }
+    97%, 100% {
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -o-transform: scale(1);
+    }
+}
+/* Content */
+.content{
+  box-sizing: border-box;
+  padding: 50px;
+  float: left;
+  width: 70%;
+}
+
+.content li{
+  float: left;
+}
+
+.content div{
+  background-color: #ffc;
+  box-shadow: 2px 2px 14px #000;
+  display: inline-block;
+  height: 150px;
+  margin: 20px;
+  padding: 15px;
+  transform: rotate(-7deg);
+  width: 150px;
+}
+
+.content div:hover, .content ul li:nth-child(even) div:hover{
+  animation: roll 0.5s forwards;
+  position:relative;
+  z-index:5;
+}
+
+.content ul li:nth-child(even) div {
+  background-color: #cfc;
+  transform: rotate(7deg);
+}
+
+@keyframes roll {
+  100% {
+    transform: rotate(0);
+    transform: scale(1.3);
+  }
+}
+
+.content h2, .content p{
+  color: #000;
+  font-size: 1.5em;
+}
+
+.content h2{
+  font-weight: bold;
+  margin: 0px;
+}
