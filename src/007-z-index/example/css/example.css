@@ -61,6 +61,60 @@ html, body {
 	line-height: 2;
 }
 
+.square-container{
+		position: relative;
+		margin-top: -250px;
+}
+
+.square-container div{
+	display: block;
+	height: 100px;
+	transform: rotate(36deg);
+	width: 100px;
+}
+
+.square-one{
+	background-color: #e53935;
+	z-index: 1;
+}
+.square-two{
+	background-color: #ef6c00;
+	margin: -70px 0 0 40px;
+	z-index: 2;
+}
+.square-three{
+	background-color: #cddc39;
+	margin: -70px 0 0 60px;
+	z-index: 3;
+}
+.square-four{
+	background-color: #84ffff;
+	margin: -70px 0 0 80px;
+	z-index: 4;
+}
+.square-five{
+	background-color: #0277bd ;
+	margin: -70px 0 0 80px;
+	z-index: 5;
+}
+.square-six{
+	background-color: #d500f9;
+	margin: -70px 0 0 60px;
+	z-index: 6;
+}
+
+.square-seven{
+	background-color: #bdbdbd;
+	margin: -70px 0 0 40px;
+	z-index: 7;
+}
+
+.square-eight{
+	background-color: #bf360c ;
+	margin: -70px 0 0 0px;
+	z-index: 8;
+}
+
 /* Grey wrapper */
 .gray-wrapper{
 	background-color: rgba(0, 0, 0, 0.6);
