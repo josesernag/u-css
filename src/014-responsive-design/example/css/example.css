@@ -1,0 +1,56 @@
+/* Practice Layout */
+
+body,
+html {
+  color: #787878;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+/* Page content */
+.page-content{
+	padding: 0;
+	width: 100%;
+}
+
+/* Top image */
+.top-image{
+	background-image:  url(../images/backgrounds/bg1.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	text-align: center;
+	height: 250px;
+	width: 100%;
+}
+
+/* Discount */
+.discount{
+	background-image:  url(../images/backgrounds/bg2.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: top;
+	position: relative;
+	height: 360px;
+	width: 100%;
+}
+
+/* Footer */
+.footer{
+	height: 400px;
+	width: 100%;
+}
+
+.dropdown-container{
+	box-sizing: border-box;
+	padding: 50px;
+}
+
+.dropdown-footer{
+	display: inline-block;
+	width: 22%;
+}
