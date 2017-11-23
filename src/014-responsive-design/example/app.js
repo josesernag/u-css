@@ -2,7 +2,7 @@ $(document).ready(function(){
 
   $(window).on("scroll",function(){
     var wn = $(window).scrollTop();
-    if(wn > 140){
+    if(wn > 120){
       $(".navbar").removeClass('navbar-no-scroll');
       $(".navbar").addClass('navbar-scroll');
     }
