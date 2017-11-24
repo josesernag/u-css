@@ -41,20 +41,16 @@ h3{
 /* Input */
 .label{
 	background-color: #e5e5e5;
+  box-sizing: border-box;
+	cursor: pointer;
+  font-size: 1em;
+	font-weight: 600;
 	height: 70px;
 	padding: 30px;
+  padding-top: 25px;
 	text-align: center;
 	width: auto;
 }
-
-.label{
-	box-sizing: border-box;
-	cursor: pointer;
-	font-size: 1em;
-	font-weight: 600;
-	padding-top: 25px;
-}
-
 
 .label:hover {
   background: #d8d8d8;
@@ -90,10 +86,14 @@ input[type="checkbox"], input[type="radio"] {
 }
 
 .control-group label span {
+  align-items: center;
 	background-color: #e6e6e6;
-    display:inline-block;
-    height:19px;
-    width:19px;
+  display: flex;
+  height:19px;
+  justify-content: center;
+  margin-right: 10px;
+	margin-bottom: 2px;
+  width:19px;
 }
 
 .control-group label span:hover {
@@ -101,21 +101,15 @@ input[type="checkbox"], input[type="radio"] {
 	cursor: pointer;
 }
 
-.control-group label:hover, .control-group label:hover {
+.control-group label:hover {
 	cursor: pointer;
-}
-
-.control-group label span{
-	margin-right: 10px;
-	margin-bottom: 2px;
-	padding-bottom: 2px;
 }
 
 .control-group label{
 	align-items:center;
 	display: flex;
+  height: min-content;
 	font-size: 1.2em;
-	font-weight: 400;
 	margin-bottom: 20px;
 }
 
@@ -126,8 +120,7 @@ input[type="checkbox"], input[type="radio"] {
 .control-group input:checked ~ .span-checkbox:after {
   content: "\2713 ";
   color: white;
-  padding: 0px 0px 0px 2px;
-  margin-top: -2px;
+  font-size: 14px;
 }
 
 .control-group input:disabled ~ .span-checkbox {
@@ -144,12 +137,8 @@ input[type="checkbox"], input[type="radio"] {
 }
 
 .control-group input:checked ~ .span-radio:after {
-	display: block;
   content: "\2022";
   color: white;
-  height: 17px;
-  margin: -4px 5px;
-  zoom : 1;
 }
 
 .control-group input:disabled ~ .span-radio {
