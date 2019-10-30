@@ -1,0 +1,51 @@
+/* Practice Layout */
+body,
+html {
+  color: #787878;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+h1, p{
+	margin: 0 auto;
+}
+/* Font */
+a{
+  color: #f0ad4e;
+}
+
+a:hover, a:focus{
+  color: #f07a19;
+}
+
+.card{
+  margin-bottom: 14px;
+}
+
+#card-title{
+  margin-bottom: 15px;
+}
+
+.block{
+  margin-left: 10px;
+}
+
+.btn-list{
+	cursor: pointer;
+}
+
+/* Desktop */
+@media (min-width: 800px) {
+  .left-margin{
+    margin-left: 1em !important;
+  }
+}
+
+/* Tables */
+@media (max-width: 800px) {
+  .left-margin{
+    margin: 0 !important;
+  }
+}
